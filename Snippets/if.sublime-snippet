@@ -1,7 +1,7 @@
 <snippet>
   <tabTrigger>IF</tabTrigger>
   <scope>source.vhdl</scope>
-  <content>IF ${1:expression} THEN
+  <content>IF (${1:expression}) THEN
 	$0
 END IF;</content>
   <description>IF</description>

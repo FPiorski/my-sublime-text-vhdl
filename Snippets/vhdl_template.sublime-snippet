@@ -1,20 +1,21 @@
 <snippet>
   <tabTrigger>vhdl</tabTrigger>
   <scope>source.vhdl</scope>
-  <content>library ieee ;
-	use ieee.std_logic_1164.all ;
-	use ieee.numeric_std.all ;
+  <content>LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.NUMERIC_STD.ALL;
 
-entity ${1:${TM_FILENAME/(.*?)(\..+)/$1/}} is
-  port (
-	${0:clock}
-  ) ;
-end entity ; -- ${1:${TM_FILENAME/(.*?)(\..+)/$1/}}
+ENTITY ${1:${TM_FILENAME/(.*?)(\..+)/$1/}} IS
+    PORT
+    (
+	    ${0:clock}
+    );
+END ${1:${TM_FILENAME/(.*?)(\..+)/$1/}};
 
-architecture ${2:arch} of ${1:${TM_FILENAME/(.*?)(\..+)/$1/}} is
+ARCHITECTURE RTL OF ${1:${TM_FILENAME/(.*?)(\..+)/$1/}} IS
 
-begin
+BEGIN
 
-end architecture ; -- ${2:arch}</content>
+END ARCHITECTURE;</content>
   <description>vhdl template</description>
 </snippet>

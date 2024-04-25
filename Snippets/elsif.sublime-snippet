@@ -1,7 +1,7 @@
 <snippet>
   <tabTrigger>ELSIF</tabTrigger>
   <scope>source.vhdl</scope>
-  <content>ELSIF ${1:expression} then
+  <content>ELSIF (${1:expression}) THEN
 	$0</content>
   <description>ELSIF</description>
 </snippet>
