@@ -1,7 +1,7 @@
 <snippet>
-  <tabTrigger>else</tabTrigger>
+  <tabTrigger>ELSE</tabTrigger>
   <scope>source.vhdl</scope>
-  <content>else
+  <content>ELSE
 	$0</content>
-  <description>else</description>
+  <description>ELSE</description>
 </snippet>

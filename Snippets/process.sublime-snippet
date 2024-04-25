@@ -1,9 +1,14 @@
 <snippet>
-  <tabTrigger>pro</tabTrigger>
+  <tabTrigger>PRO</tabTrigger>
   <scope>source.vhdl</scope>
-  <content>${1:identifier} : process( ${2:sensitivity_list} )
-begin
-	$0
-end process ; -- ${1:identifier}</content>
+  <content>PROCESS(i_clk)
+BEGIN
+    IF (rising_edge(i_clk)) THEN
+        IF (i_rst_n = '0') THEN
+            $0
+        ELSE
+        END IF;
+    END IF;
+END PROCESS;</content>
   <description>process</description>
 </snippet>
